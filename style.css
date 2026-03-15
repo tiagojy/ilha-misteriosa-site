@@ -1,5 +1,6 @@
 @charset "UTF-8"; 
 
+/*CONFIGURAÇÃO DAS FONTS UTILIZADAS NO SITE*/
 @import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Average&display=swap');
@@ -14,12 +15,14 @@
     --cor4:#94D7F2; 
     --cor5:#cef6ff; 
 }
+
 /*CONFIGURAÇÃO DO CORPO DO SITE*/
 body{
     padding: 0px; 
     margin: 0px;
     background-color: var(--cor5);
 }
+
 /*CONFIGURAÇÃO DO CABEÇALHO DO SITE*/
 header{
     background-image: linear-gradient(to top, var(--cor1), var(--cor3));
@@ -42,7 +45,9 @@ header > p{
     font-size: 1.1rem;
     font-family: 'Open Sans', sans-serif;
 } 
-header > nav > a{
+
+/*CONFIGURAÇÃO DO MENU DE NAVEGAÇÃO DO SITE*/
+header > nav > ul > li > a{
     color: white;
     text-decoration: none; 
     padding: 10px 15px;
@@ -54,14 +59,23 @@ header > nav > a{
     display: inline-block;
     transition: background-color 0.3s ease-in-out; 
 } 
-h2,h3{
-    font-family: 'Average', serif;
-}
+
 nav a:hover{
     color: var(--cor4);
     background-color: var(--cor2);
-    
 } 
+header > nav > ul {
+    list-style-type: none; 
+    display: flex;         
+    padding: 0;            
+    margin: 0;
+    gap: 10px;            
+}
+
+/*CONFIGURAÇÃO DO CONTEÚDO PRINCIPAL DO SITE*/
+h2,h3{
+    font-family: 'Average', serif;
+}
 
 main{
     background-color: white;
@@ -84,8 +98,8 @@ main > section >ul{
 .titulo{
     color: var(--cor1);
 }
-/*CONFIGURAÇÃO SOBRE O LIVRO*/
 
+/*CONFIGURAÇÃO SOBRE O LIVRO*/
 .secao-livro{
     display: flex;
     align-items: center;
@@ -126,14 +140,17 @@ main > section >ul{
         max-width: 80%;
     }
 }
+
 /*CONFIGURAÇÃO SOBRE O RESUMO DO LIVRO*/
 #paragrafo{
     padding-bottom: 20px;
 }
+
 /*CONFIGURAÇÃO CURIOSIDADES*/ 
 .titulo{
     margin-top: 25px;
 }
+
 /*CONFIGURAÇÃO DA PARTE SOBRE OS PERSONAGENS*/
 #personagens{
     background-color: var(--cor4);
@@ -161,6 +178,7 @@ main > section >ul{
     background-image: linear-gradient(to right, var(--cor2), transparent);
     padding: 8px 8px; 
 }
+
 /*CONFIGURAÇÃO DA PARTE DO AUTOR*/ 
 .container-autor{
     display: flex;
